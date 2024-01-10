@@ -91,7 +91,7 @@ In this tab, you will need to enter the following information before starting th
 4: Port: The port that you are going to use for listing to the reverse shell.
 5: Upload Wait Time: This time is the time that you think it is enough to upload agent file to the machine that the reverse shell will come from, it depents on how fast is the connection, adjust it depending on that.
 ```
-Windows host example: in this example, we hacked a windows host, then discovered that it's dual interface host, and the other interface might takes as somewhere interesting, so we need to pivot:
+<b>Windows host example</b>: in this example, we hacked a windows host, then discovered that it's dual interface host, and the other interface might takes as somewhere interesting, so we need to pivot:
 
 
 
