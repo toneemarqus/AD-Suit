@@ -9,10 +9,7 @@ ADSuit is a comprehensive penetration testing suite designed for security profes
 - Pivot easly from network to network with only a reverse shell.
 - Enumerate and attack active directories with one click.
 # Installation
-Install libsqlcipher-dev:
-```
-sudo apt-get install libsqlcipher-dev
-```
+
 Download adsuit-1.0.deb and install it with dpkg:
 ```
 sudo dpkg -i adsuit-1.0.deb
@@ -30,7 +27,8 @@ sudo adsuit
 
  
 # Step-By-Step Guide
-Scan all protocols with a Single Username and Password:
+Hosts Tab:
+![image](https://github.com/toneemarqus/AD-Suit/assets/85018947/879b2a3c-2ac1-43f9-8ad1-3563563ac96c)
 
 # Contributing to Go Map Exec
 
