@@ -42,7 +42,7 @@ All the fields supports auto save when change is made.
 
 ## Sessions Tab:
 
-This tab is used to start sessions using the usernames, password and hashes from the  UserManagement tab.
+This tab is used to start sessions using the usernames, password and hashes from the UserManagement tab, when clicking connect button, new terminal will open with the session opened.
 
 ![image](https://github.com/toneemarqus/AD-Suit/assets/85018947/00372325-1977-427b-aee0-10796937aa71)
 
@@ -57,6 +57,44 @@ You can also choose between using a password or a hash along with the username:
 Example: here we used forest machine from hack the box, the user is "svc-alfresco" and password "s3rvice" and the session is made via WinRM:
 
 ![image](https://github.com/toneemarqus/AD-Suit/assets/85018947/3accd9a4-1cc6-4361-8959-88732711c70b)
+
+## Spraying Tab:
+In this tab, two tools are used to spray the usernames, password and hashes to a single or multiple IPs.
+
+![image](https://github.com/toneemarqus/AD-Suit/assets/85018947/58dcbe83-607a-41b9-83f2-8bc047dfe5ac)
+
+Two tools are used to spray the password which are:
+![image](https://github.com/toneemarqus/AD-Suit/assets/85018947/8234485b-2004-47be-95d6-e2e6d62be977)
+
+Example: Here we are spraying usernames agains the password using CrackMapExec with multiple IPs agains SMB protocol on forest machine from hack the box:
+
+![image](https://github.com/toneemarqus/AD-Suit/assets/85018947/f46f70b1-37bb-4101-a35b-e17db71151f8)
+The attack result:
+![image](https://github.com/toneemarqus/AD-Suit/assets/85018947/0a2a7367-3adb-48d5-9c6e-1a9cf053ea2f)
+
+## Pivoting Tab:
+This tab is one of the most important tabs, its supports pivoting to new network via reverse shell!
+
+![image](https://github.com/toneemarqus/AD-Suit/assets/85018947/a3e11f8d-f7b9-42ed-b362-ab187c7f9dce)
+
+This tab uses ligolo-ng to reach the goal, it starts proxy internally and configue it, then upload agent to the host that the reverse shell came from, all done automaticlly, just send the reverse shell!
+
+While pentesting, you might face a host with dual interfaces, and the second interface leads you to an internal network, but you still can't access it from kali.
+In this tab, you will need to enter the following information before starting the listener:
+1: OS: The host that you are sending the reverse shell from operating system.
+2: Your IP: Here you need to enter you kali linux ip.
+3: Target Network: The IP address of the network that you want to pivot to.
+4: Port: The port that you are going to use for listing to the reverse shell.
+5: Upload Wait Time: This time is the time that you think it is enough to upload agent file to the machine that the reverse shell will come from, it depents on how fast is the connection, adjust it depending on that.
+
+Windows host example: in this example, we hacked a windows host, then discovered that it's dual interface host, and the other interface might takes as somewhere interesting, so we need to pivot:
+
+
+
+
+
+
+
 
 
 # Contributing to Go Map Exec
