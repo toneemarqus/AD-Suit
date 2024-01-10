@@ -18,7 +18,10 @@ Download adsuit-1.0.deb and install it with dpkg:
 sudo dpkg -i adsuit-1.0.deb
 
 ```
-
+To uninstall the tool:
+```
+sudo apt-get remove adsuit
+```
 # Usage
 Start the tool with root privileges:
 ```
