@@ -54,6 +54,9 @@ You can also choose between using a password or a hash along with the username:
 
 ![image](https://github.com/toneemarqus/AD-Suit/assets/85018947/c8e9f5c3-0c4c-4e0a-8bda-5ea079f9fab5)
 
+Example: here we used forest machine from hack the box, the user is "svc-alfresco" and password "s3rvice" and the session is made via WinRM:
+
+![image](https://github.com/toneemarqus/AD-Suit/assets/85018947/3accd9a4-1cc6-4361-8959-88732711c70b)
 
 
 # Contributing to Go Map Exec
