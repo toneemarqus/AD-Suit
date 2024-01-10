@@ -80,13 +80,14 @@ This tab is one of the most important tabs, its supports pivoting to new network
 This tab uses ligolo-ng to reach the goal, it starts proxy internally and configue it, then upload agent to the host that the reverse shell came from, all done automaticlly, just send the reverse shell!
 
 While pentesting, you might face a host with dual interfaces, and the second interface leads you to an internal network, but you still can't access it from kali.
+```
 In this tab, you will need to enter the following information before starting the listener:
 1: OS: The host that you are sending the reverse shell from operating system.
 2: Your IP: Here you need to enter you kali linux ip.
 3: Target Network: The IP address of the network that you want to pivot to.
 4: Port: The port that you are going to use for listing to the reverse shell.
 5: Upload Wait Time: This time is the time that you think it is enough to upload agent file to the machine that the reverse shell will come from, it depents on how fast is the connection, adjust it depending on that.
-
+```
 Windows host example: in this example, we hacked a windows host, then discovered that it's dual interface host, and the other interface might takes as somewhere interesting, so we need to pivot:
 
 
