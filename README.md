@@ -13,7 +13,7 @@ Install libsqlcipher-dev:
 ```
 sudo apt-get install libsqlcipher-dev
 ```
-Download adsuit-1.0.deb and install it with dpkg
+Download adsuit-1.0.deb and install it with dpkg:
 ```
 sudo dpkg -i adsuit-1.0.deb
 
