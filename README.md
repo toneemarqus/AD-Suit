@@ -29,6 +29,8 @@ sudo adsuit
 # Step-By-Step Guide
 ## Hosts Tab:
 
+Here you will input the IP adresses you are going to test along with the domain if any. Both field supports auto save when changes are made.
+
 ![image](https://github.com/toneemarqus/AD-Suit/assets/85018947/879b2a3c-2ac1-43f9-8ad1-3563563ac96c)
 
 # Contributing to Go Map Exec
