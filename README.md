@@ -9,16 +9,14 @@ ADSuit is a comprehensive penetration testing suite designed for security profes
 - Pivot easly from network to network with only a reverse shell.
 - Enumerate and attack active directories with one click.
 # Installation
-IF you are on kali latest verion:
+Install libsqlcipher-dev:
 ```
-Download the 
+sudo apt-get install libsqlcipher-dev
 ```
-If you are anywhere else and having errors, clone the repo and build it yourself to match your system tool versions:
+Download adsuit-1.0.deb and install it with dpkg
 ```
-git clone https://github.com/toneemarqus/Go_Map_Exec
-cd Go_Map_Exec/
-apt install golang-go
-go build go_map_exec.go
+sudo dpkg -i adsuit-1.0.deb
+
 ```
 
 # Usage
