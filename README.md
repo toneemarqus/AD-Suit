@@ -111,12 +111,18 @@ Now we will need to go to the windows machine and upload nc64.exe and send a rev
 
 as we can see above when we hit enter, AD Suit started the uploading process immediately:
 
-![image](https://github.com/toneemarqus/AD-Suit/assets/85018947/a846fbe7-ccc5-48b2-b2cf-553c3c68b266)
+![image](https://github.com/toneemarqus/AD-Suit/assets/85018947/8c3f73a3-e9e8-4b13-b51a-21ee99988dba)
+
 
 The reverse shell will be recieved on AD Suit:
 
 ![image](https://github.com/toneemarqus/AD-Suit/assets/85018947/78411a63-e691-489e-a7d5-5b379dd3d530)
 
+Now after waiting 60 seconds, the tunnel is build and we have connection to the new network:
+
+![image](https://github.com/toneemarqus/AD-Suit/assets/85018947/054d672b-81cb-4ee8-b37b-a9e99626061b)
+
+We can now interact with the new network directly from our normal kali terminal, for example run Nmap:
 
 
 
