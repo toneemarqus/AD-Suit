@@ -20,46 +20,15 @@ sudo dpkg -i adsuit-1.0.deb
 ```
 
 # Usage
+Start the tool with root privileges:
 ```
-Run the tool with the required flags. Below are some of the common flags and usage examples:
--u: Specify a single username for the scan.
--p: Specify a single password for the scan.
--d: (OPTIONAL) Specify the domain for the scan.
--uf: (OPTIONAL) Specify a file containing a list of usernames.
--pf: (OPTIONAL) Specify a file containing a list of passwords.
--H: (OPTIONAL) Specify an NTLM hash for the scan.
--pr: (OPTIONAL) Specify protocols to check (all(Default), rdp, smb, ssh, winrm).
+sudo adsuit
 ```
-# Demo
-https://medium.com/@toneemarqus/go-map-exec-your-ultimate-credentials-spraying-tool-d4a6bfa49bae 
+
  
-# Example Commands
+# Step-By-Step Guide
 Scan all protocols with a Single Username and Password:
-```
-./go_map_exec -u username -p password 10.10.10.1
-```
-Scan customized Protocols:
-```
-./go_map_exec -pr 'ssh winrm' -u username -p password 10.10.10.1
-```
-Using a Username and Password File:
-```
-./go_map_exec -uf users.txt -pf passwords.txt 10.10.10.1
-```
-Scan a range of IP addresses.
-```
-./go_map_exec -u admin -p password123 192.168.1.100 192.168.1.101 192.168.1.102
-or
-./go_map_exec -u admin -p password123 192.168.1.100-3
-```
-Scan using an NTLM hash instead of a password.
-```
-./go_map_exec -u admin -H AAD3B435B51404EEAAD3B435B51404EE 192.168.1.100
-```
-Scan with domain credentials.
-```
-./go_map_exec -u admin -p password123 -d mydomain 192.168.1.100
-```
+
 # Contributing to Go Map Exec
 
 I welcome contributions from everyone! Here are some ways you can contribute:
