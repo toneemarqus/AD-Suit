@@ -64,12 +64,15 @@ In this tab, two tools are used to spray the usernames, password and hashes to a
 ![image](https://github.com/toneemarqus/AD-Suit/assets/85018947/58dcbe83-607a-41b9-83f2-8bc047dfe5ac)
 
 Two tools are used to spray the password which are:
+
 ![image](https://github.com/toneemarqus/AD-Suit/assets/85018947/8234485b-2004-47be-95d6-e2e6d62be977)
 
 Example: Here we are spraying usernames agains the password using CrackMapExec with multiple IPs agains SMB protocol on forest machine from hack the box:
 
 ![image](https://github.com/toneemarqus/AD-Suit/assets/85018947/f46f70b1-37bb-4101-a35b-e17db71151f8)
+
 The attack result:
+
 ![image](https://github.com/toneemarqus/AD-Suit/assets/85018947/0a2a7367-3adb-48d5-9c6e-1a9cf053ea2f)
 
 ## Pivoting Tab:
@@ -80,8 +83,8 @@ This tab is one of the most important tabs, its supports pivoting to new network
 This tab uses ligolo-ng to reach the goal, it starts proxy internally and configue it, then upload agent to the host that the reverse shell came from, all done automaticlly, just send the reverse shell!
 
 While pentesting, you might face a host with dual interfaces, and the second interface leads you to an internal network, but you still can't access it from kali.
-```
 In this tab, you will need to enter the following information before starting the listener:
+```
 1: OS: The host that you are sending the reverse shell from operating system.
 2: Your IP: Here you need to enter you kali linux ip.
 3: Target Network: The IP address of the network that you want to pivot to.
