@@ -27,7 +27,8 @@ sudo adsuit
 
  
 # Step-By-Step Guide
-Hosts Tab:
+## Hosts Tab:
+
 ![image](https://github.com/toneemarqus/AD-Suit/assets/85018947/879b2a3c-2ac1-43f9-8ad1-3563563ac96c)
 
 # Contributing to Go Map Exec
