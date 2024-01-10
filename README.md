@@ -76,7 +76,7 @@ The attack result:
 ![image](https://github.com/toneemarqus/AD-Suit/assets/85018947/0a2a7367-3adb-48d5-9c6e-1a9cf053ea2f)
 
 ## Pivoting Tab:
-This tab is one of the <b>most important<b> tabs, its supports <b>pivoting</b> to new network via <b>reverse shell!</b>
+This tab is one of the <b>most important</b> tabs, its supports <b>pivoting</b> to new network via <b>reverse shell!</b>
 
 ![image](https://github.com/toneemarqus/AD-Suit/assets/85018947/a3e11f8d-f7b9-42ed-b362-ab187c7f9dce)
 
@@ -93,6 +93,25 @@ In this tab, you will need to enter the following information before starting th
 ```
 <b>Windows host example</b>: in this example, we hacked a windows host, then discovered that it's dual interface host, and the other interface might takes as somewhere interesting, so we need to pivot:
 
+screenshot of the windows machine with dual interface
+
+![image](https://github.com/toneemarqus/AD-Suit/assets/85018947/cec06bb3-61fb-46e8-948e-c2225417120a)
+
+We will start the pivoting process with the start listing button after we entered the required information:
+
+![image](https://github.com/toneemarqus/AD-Suit/assets/85018947/c0dc1309-6773-49e1-963b-15e12e43c7bd)
+
+the termial will look like this:
+
+![image](https://github.com/toneemarqus/AD-Suit/assets/85018947/1c1d87b8-94bd-4d9c-8a1c-66bd75272d68)
+
+Now we will need to go to the windows machine and upload nc64.exe and send a reverse shell to our kali machine on port 4444:
+
+![image](https://github.com/toneemarqus/AD-Suit/assets/85018947/d9364cc6-af16-4736-afb3-eb5b4699c1f1)
+
+as we can see above when we hit enter, AD Suit started the uploading process immediately:
+
+![image](https://github.com/toneemarqus/AD-Suit/assets/85018947/78411a63-e691-489e-a7d5-5b379dd3d530)
 
 
 
