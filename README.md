@@ -111,6 +111,10 @@ Now we will need to go to the windows machine and upload nc64.exe and send a rev
 
 as we can see above when we hit enter, AD Suit started the uploading process immediately:
 
+![image](https://github.com/toneemarqus/AD-Suit/assets/85018947/a846fbe7-ccc5-48b2-b2cf-553c3c68b266)
+
+The reverse shell will be recieved on AD Suit:
+
 ![image](https://github.com/toneemarqus/AD-Suit/assets/85018947/78411a63-e691-489e-a7d5-5b379dd3d530)
 
 
