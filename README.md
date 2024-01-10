@@ -122,9 +122,11 @@ Now after waiting 60 seconds, the tunnel is build and we have connection to the 
 
 ![image](https://github.com/toneemarqus/AD-Suit/assets/85018947/054d672b-81cb-4ee8-b37b-a9e99626061b)
 
-We can now interact with the new network directly from our normal kali terminal, for example run Nmap:
+We can now interact with the new network directly from our normal kali terminal, for example run ping:
 
+![image](https://github.com/toneemarqus/AD-Suit/assets/85018947/d34a340b-cffb-4eb2-868f-f09896ea3999)
 
+This was a quick demo for Windows host pivoting, when trying to pivot through Linux host, the steps are exactly the same, and it will connect you to containers from inside the linux host itself too!
 
 
 
