@@ -9,10 +9,7 @@ ADSuit is a comprehensive penetration testing suite designed for security profes
 - Pivot easly from network to network with only a reverse shell.
 - Enumerate and attack active directories with one click.
 # Installation
-Install libsqlcipher-dev:
-```
-sudo apt-get install libsqlcipher-dev
-```
+
 Download adsuit-1.0.deb and install it with dpkg:
 ```
 sudo dpkg -i adsuit-1.0.deb
@@ -30,7 +27,37 @@ sudo adsuit
 
  
 # Step-By-Step Guide
-Scan all protocols with a Single Username and Password:
+## Hosts Tab:
+
+Here you will input the IP adresses you are going to test along with the domain if any. Both field supports auto save when changes are made.
+
+![image](https://github.com/toneemarqus/AD-Suit/assets/85018947/879b2a3c-2ac1-43f9-8ad1-3563563ac96c)
+
+## UserManagement Tab:
+
+In this tab, you will enter all the usernames, passwords and hashes you found, they are important and going to be used in the next tabs.
+All the fields supports auto save when change is made.
+
+![image](https://github.com/toneemarqus/AD-Suit/assets/85018947/64d4ccd5-b8f4-4fb8-8fd0-7dfc8e6eb6b9)
+
+## Sessions Tab:
+
+This tab is used to start sessions using the usernames, password and hashes from the  UserManagement tab.
+
+![image](https://github.com/toneemarqus/AD-Suit/assets/85018947/00372325-1977-427b-aee0-10796937aa71)
+
+It supports three session which are:
+
+![image](https://github.com/toneemarqus/AD-Suit/assets/85018947/121c814f-39e8-4de8-b37f-f8c30eb91f97)
+
+You can also choose between using a password or a hash along with the username:
+
+![image](https://github.com/toneemarqus/AD-Suit/assets/85018947/c8e9f5c3-0c4c-4e0a-8bda-5ea079f9fab5)
+
+Example: here we used forest machine from hack the box, the user is "svc-alfresco" and password "s3rvice" and the session is made via WinRM:
+
+![image](https://github.com/toneemarqus/AD-Suit/assets/85018947/3accd9a4-1cc6-4361-8959-88732711c70b)
+
 
 # Contributing to Go Map Exec
 
