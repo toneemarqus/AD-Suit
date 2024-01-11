@@ -81,7 +81,7 @@ The attack result:
 ![image](https://github.com/toneemarqus/AD-Suit/assets/85018947/0a2a7367-3adb-48d5-9c6e-1a9cf053ea2f)
 
 ## Pivoting Tab:
-This tab is one of the <b>most important</b> tabs, its supports <b>pivoting</b> to new network via <b>reverse shell!</b>
+This tab is one of the <b>most important</b> tabs, its supports <b>pivoting</b> to new network via a <b>reverse shell!</b>
 
 ![image](https://github.com/toneemarqus/AD-Suit/assets/85018947/a3e11f8d-f7b9-42ed-b362-ab187c7f9dce)
 
@@ -110,9 +110,7 @@ the termial will look like this:
 
 ![image](https://github.com/toneemarqus/AD-Suit/assets/85018947/1c1d87b8-94bd-4d9c-8a1c-66bd75272d68)
 
-Now we will need to go to the windows machine and upload nc64.exe and send a reverse shell to our kali machine on port 4444:
-
-![image](https://github.com/toneemarqus/AD-Suit/assets/85018947/d9364cc6-af16-4736-afb3-eb5b4699c1f1)
+Now we will need to go to the windows machine and upload nc64.exe and send a reverse shell to our kali machine on port 4444.
 
 as we can see above when we hit enter, AD Suit started the uploading process immediately:
 
