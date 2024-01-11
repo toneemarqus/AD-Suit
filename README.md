@@ -15,7 +15,7 @@
   
 # Installation
 
-<b>The Tool only supports the latest version of kali at the mean time.<b>
+<b>The Tool only supports the latest version of kali at the mean time.</b>
 
 <b>Download</b> adsuit-1.0.deb and install it with dpkg:
 ```
@@ -131,7 +131,31 @@ We can now interact with the new network directly from our normal kali terminal,
 
 ![image](https://github.com/toneemarqus/AD-Suit/assets/85018947/d34a340b-cffb-4eb2-868f-f09896ea3999)
 
-This was a quick demo for Windows host pivoting, when trying to pivot through Linux host, the steps are exactly the same.
+
+<b>Linux host example</b>:
+Here we have another host, but this time the host is with Linux OS, as we can see it's also connected to the external netwok that we have access too "192.168.0.0", and we need to access the "10.0.2.0" network:
+
+![image](https://github.com/toneemarqus/AD-Suit/assets/85018947/30cb41ee-f00d-47cb-bc3a-601cc08d158f)
+
+Here are the AD Suit configurations with listining started:
+
+![image](https://github.com/toneemarqus/AD-Suit/assets/85018947/a3ff15e2-04cc-491d-8d94-5e023c327a9e)
+
+The terminal looks like this:
+
+![image](https://github.com/toneemarqus/AD-Suit/assets/85018947/f8fb09d4-c2d2-477b-87b9-7fc17c906362)
+
+Now we will go to the Linux host and send the reverse shell using netcat:
+
+![image](https://github.com/toneemarqus/AD-Suit/assets/85018947/1eec9898-0bc1-4906-9b9d-47bd3beb2b54)
+
+Reverse shell recieved:
+
+![image](https://github.com/toneemarqus/AD-Suit/assets/85018947/c32f3086-4226-4387-8034-c38c41f257ed)
+
+Upload done and we are good to access the new network:
+
+![image](https://github.com/toneemarqus/AD-Suit/assets/85018947/91525b05-9b7e-476b-8629-06235308c3f2)
 
 <b>For Linux, if you need to access a container on the same host, the tool will help you do that too! just put the container network ip in the interface field).</b>
 
