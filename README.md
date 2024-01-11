@@ -15,6 +15,8 @@
   
 # Installation
 
+<b>The Tool only supports the latest version of kali at the mean time.<b>
+
 <b>Download</b> adsuit-1.0.deb and install it with dpkg:
 ```
 sudo dpkg -i adsuit-1.0.deb
@@ -130,9 +132,11 @@ We can now interact with the new network directly from our normal kali terminal,
 ![image](https://github.com/toneemarqus/AD-Suit/assets/85018947/d34a340b-cffb-4eb2-868f-f09896ea3999)
 
 This was a quick demo for Windows host pivoting, when trying to pivot through Linux host, the steps are exactly the same.
+
 <b>For Linux, if you need to access a container on the same host, the tool will help you do that too! just put the container network ip in the interface field).</b>
 
 ## Attacks Tab:
+
 
 
 # Contributing to Go Map Exec
