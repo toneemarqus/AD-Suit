@@ -1,13 +1,18 @@
 # AD Suit
+
 # Overview
+
 <b>ADSuit</b> is a comprehensive penetration testing suite designed for security professionals and network administrators. It focuses on enhancing the assessment of Active Directory (AD) environments, providing a wide range of tools and functionalities that streamline the process of identifying vulnerabilities, auditing AD setups, and simulating attack scenarios.
+
 # Features
+
 - GUI based tool.
-- Hosts, domain, IPs and credentials management
+- Hosts, domain, IPs and credentials management.
 - One click to start a session with WinRM or PSexec.
 - One click to start a spraying usernames and passwords agains a host with two different tools (CrackMapExec and GoMapExec).
 - Pivot easly from network to network with only a reverse shell.
 - Enumerate and attack active directories with one click.
+- 
 # Installation
 
 <b>Download</b> adsuit-1.0.deb and install it with dpkg:
