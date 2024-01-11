@@ -22,10 +22,10 @@ sudo dpkg -i adsuit-1.0.deb
 ```
 To <b>uninstall</b> the tool:
 ```
-sudo apt-get remove adsuit
+sudo apt remove adsuit
 ```
 # Usage
-<b>Start</b> the tool with root privileges:
+<b>Start</b> the tool with root privileges(ONLY ROOT):
 ```
 sudo adsuit
 ```
