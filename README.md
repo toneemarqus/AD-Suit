@@ -209,16 +209,16 @@ Here we need to modify the domain from the hosts tab to "active.htb" and choose 
 
 ![image](https://github.com/toneemarqus/AD-Suit/assets/85018947/acf12f00-2406-4382-8717-8b0bc44f888b)
 
-# Contributing to AD Suit
+#Contributing to ADSuit
+Contributions to ADSuit are highly encouraged. You can contribute in the following ways:
 
-I welcome contributions from everyone! Here are some ways you can contribute:
+- Reporting Bugs: If you encounter any bugs, please report them using the Issues tab with detailed information.
 
-1. **Reporting Bugs**: If you find a bug, please use the Issues tab to report it, providing as much detail as possible.
+- Feature Suggestions: Share your ideas to enhance ADSuit by submitting them through the Issues tab.
 
-2. **Feature Suggestions**: Have an idea to improve Go Map Exec? We'd love to hear it! Submit your suggestions through the Issues tab.
+- Pull Requests: If you're inclined to contribute directly to the code, please submit a pull request with clear descriptions of your changes and any necessary tests or documentation.
 
-3. **Pull Requests**: Want to directly contribute to the code? Great! Please submit a pull request with a clear description of your changes and any necessary tests or documentation.
-Thank you for your interest in improving Go Map Exec!
+Thank you for considering contributing to ADSuit!
 
-# Disclaimer
-AD Suit is intended for education and legal purposes only. Users are responsible for complying with applicable laws. The developer is not liable for misuse or damage caused by this tool.
+#Disclaimer
+ADSuit is intended solely for educational and legal purposes. Users are responsible for adhering to applicable laws. The developer assumes no liability for misuse or damage caused by this tool.
