@@ -209,7 +209,7 @@ Here we need to modify the domain from the hosts tab to "active.htb" and choose 
 
 ![image](https://github.com/toneemarqus/AD-Suit/assets/85018947/acf12f00-2406-4382-8717-8b0bc44f888b)
 
-#Contributing to ADSuit
+# Contributing to ADSuit
 Contributions to ADSuit are highly encouraged. You can contribute in the following ways:
 
 - Reporting Bugs: If you encounter any bugs, please report them using the Issues tab with detailed information.
@@ -220,5 +220,5 @@ Contributions to ADSuit are highly encouraged. You can contribute in the followi
 
 Thank you for considering contributing to ADSuit!
 
-#Disclaimer
+# Disclaimer
 ADSuit is intended solely for educational and legal purposes. Users are responsible for adhering to applicable laws. The developer assumes no liability for misuse or damage caused by this tool.
