@@ -22,6 +22,11 @@
 sudo dpkg -i adsuit-1.0.deb
 
 ```
+Install seclists
+```
+sudo apt install seclists
+
+```
 To <b>uninstall</b> the tool:
 ```
 sudo apt remove adsuit
@@ -174,9 +179,37 @@ The above command will send the request to the dual host port "1234" that we sen
 
 ## Attacks Tab:
 
+In this tab, we have two types of tools used, enumeration tools and atacking tools. 
 
+![image](https://github.com/toneemarqus/AD-Suit/assets/85018947/31349065-fb8d-4601-b45e-4d43d7fa8112)
 
-# Contributing to Go Map Exec
+when starting interacting with host, it's suggested to start with enumeration, when you put your mouse on the execute button, it will give you some information of the tool:
+
+![image](https://github.com/toneemarqus/AD-Suit/assets/85018947/9eb05823-ad51-48b3-a0d5-583ef95a07e2)
+
+There are two buttons for each one, one for executing and the other one to copy the command.
+
+In addition, there is three dropdown menues at the button, so the user can choose a username, password or hash where needed.
+
+<b>Enumerating example - GetNPUser - Forest Machine HTB </b>
+
+![image](https://github.com/toneemarqus/AD-Suit/assets/85018947/d46a8cdd-b080-4fe2-80a4-0fc84be3eda7)
+
+<b>Enumerating example - Kerbrute UserEnum - Forest Machine HTB </b>
+
+![image](https://github.com/toneemarqus/AD-Suit/assets/85018947/9e9900e0-6561-4476-8c48-6924dcc79c33)
+
+<b>Attacking example - Kerbrute PaswordSpray - Active Machine HTB </b>
+
+Here we need to modify the domain from the hosts tab to "active.htb" and choose only a password to be sprayed with all the usernames:
+
+![image](https://github.com/toneemarqus/AD-Suit/assets/85018947/33346d91-f8bb-48d8-b0d7-8c3cf17f706f)
+
+<b>Attacking example - HashCat</b>
+
+![image](https://github.com/toneemarqus/AD-Suit/assets/85018947/acf12f00-2406-4382-8717-8b0bc44f888b)
+
+# Contributing to AD Suit
 
 I welcome contributions from everyone! Here are some ways you can contribute:
 
@@ -188,4 +221,4 @@ I welcome contributions from everyone! Here are some ways you can contribute:
 Thank you for your interest in improving Go Map Exec!
 
 # Disclaimer
-Go Map Exec is intended for legal purposes only. Users are responsible for complying with applicable laws. The developer is not liable for misuse or damage caused by this tool.
+AD Suit is intended for education and legal purposes only. Users are responsible for complying with applicable laws. The developer is not liable for misuse or damage caused by this tool.
