@@ -112,7 +112,7 @@ the termial will look like this:
 
 Now we will need to go to the windows machine and upload nc64.exe and send a reverse shell to our kali machine on port 4444.
 
-as we can see above when we hit enter, AD Suit started the uploading process immediately:
+as we can see below when we hit enter, AD Suit started the uploading process immediately(make sure that you can read/write on the current directory):
 
 ![image](https://github.com/toneemarqus/AD-Suit/assets/85018947/8c3f73a3-e9e8-4b13-b51a-21ee99988dba)
 
@@ -125,14 +125,14 @@ Now after waiting 60 seconds, the tunnel is build and we have connection to the 
 
 ![image](https://github.com/toneemarqus/AD-Suit/assets/85018947/054d672b-81cb-4ee8-b37b-a9e99626061b)
 
-We can now interact with the new network directly from our normal kali terminal, for example run ping:
+We can now interact with the new network directly from our normal kali terminal, for example run ping against on of the new network hosts:
 
 ![image](https://github.com/toneemarqus/AD-Suit/assets/85018947/d34a340b-cffb-4eb2-868f-f09896ea3999)
 
-This was a quick demo for Windows host pivoting, when trying to pivot through Linux host, the steps are exactly the same, and it will connect you to containers from inside the linux host itself too!
+This was a quick demo for Windows host pivoting, when trying to pivot through Linux host, the steps are exactly the same.
+<b>For Linux, if you need to access a container on the same host, the tool will help you do that too! just put the container network ip in the interface field).</b>
 
-
-
+## Attacks Tab:
 
 
 # Contributing to Go Map Exec
