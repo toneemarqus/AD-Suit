@@ -103,7 +103,7 @@ In this tab, you will need to enter the following information before starting th
 4: Port: The port that you are going to use for listing to the reverse shell.
 5: Upload Wait Time: This time is the time that you think it is enough to upload agent file to the machine that the reverse shell will come from, it depents on how fast is the connection, adjust it depending on that.
 ```
-<b>Windows host example</b>: in this example, we hacked a windows host, then discovered that it's dual interface host, and the other interface might takes as somewhere interesting, so we need to pivot:
+<b>Windows host pivoting example</b>: in this example, we hacked a windows host, then discovered that it's dual interface host, and the other interface might takes as somewhere interesting, so we need to pivot:
 
 screenshot of the windows machine with dual interface
 
@@ -137,7 +137,7 @@ We can now interact with the new network directly from our normal kali terminal,
 ![image](https://github.com/toneemarqus/AD-Suit/assets/85018947/d34a340b-cffb-4eb2-868f-f09896ea3999)
 
 
-<b>Linux host example</b>:
+<b>Linux host pivoting example</b>:
 Here we have another host, but this time the host is with Linux OS, as we can see it's also connected to the external netwok that we have access too "192.168.0.0", and we need to access the "10.0.2.0" network:
 
 ![image](https://github.com/toneemarqus/AD-Suit/assets/85018947/30cb41ee-f00d-47cb-bc3a-601cc08d158f)
