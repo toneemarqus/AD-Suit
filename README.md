@@ -145,7 +145,7 @@ The terminal looks like this:
 
 ![image](https://github.com/toneemarqus/AD-Suit/assets/85018947/f8fb09d4-c2d2-477b-87b9-7fc17c906362)
 
-Now we will go to the Linux host and send the reverse shell using netcat:
+Now we will go to the Linux host and send the reverse shell using netcat, once we hit enter AD Suit will start uploading agent file to the host:
 
 ![image](https://github.com/toneemarqus/AD-Suit/assets/85018947/1eec9898-0bc1-4906-9b9d-47bd3beb2b54)
 
