@@ -12,7 +12,7 @@
 - One click to start a spraying usernames and passwords agains a host with two different tools (CrackMapExec and GoMapExec).
 - Pivot easly from network to network with only a reverse shell.
 - Enumerate and attack active directories with one click.
-- 
+  
 # Installation
 
 <b>Download</b> adsuit-1.0.deb and install it with dpkg:
