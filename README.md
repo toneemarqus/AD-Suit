@@ -1,4 +1,4 @@
-# AD Suit
+# ADSuit - Active Directory Penetration Testing Suite
 
 # Overview
 
@@ -6,12 +6,12 @@
 
 # Features
 
-- GUI based tool.
-- Hosts, domain, IPs and credentials management.
-- One click to start a session with WinRM or PSexec.
-- One click to start a spraying usernames and passwords agains a host with two different tools (CrackMapExec and GoMapExec).
-- Pivot easly from network to network with only a reverse shell.
-- Enumerate and attack active directories with one click.
+- User-friendly GUI for effortless navigation.
+- Efficient management of hosts, domains, IPs, and credentials.
+- Instant session initiation with WinRM or PSexec at a single click.
+- Convenient username and password spraying using CrackMapExec and GoMapExec.
+- Seamless network pivoting with just a reverse shell.
+- Automated enumeration and attack on Active Directories.
   
 # Installation
 
