@@ -1,0 +1,3 @@
+SVC_TGS
+administrator
+svc-alfresco
