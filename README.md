@@ -210,6 +210,11 @@ Here we need to modify the domain from the hosts tab to "active.htb" and choose 
 ![image](https://github.com/toneemarqus/AD-Suit/assets/85018947/acf12f00-2406-4382-8717-8b0bc44f888b)
 
 # Road Map
+- [ ] General
+    - [ ] Improve Gui design.
+    - [ ] Improve files management for the tool files including text files and tools incuded.
+    - [ ] Add support for normal users not only root users.
+           
 
 - [ ] Hosts Tab:
     - [x] Support Domain.
