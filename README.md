@@ -251,6 +251,7 @@ Here we need to modify the domain from the hosts tab to "active.htb" and choose 
     - [ ] Improve python http server start and stop times.
     - [ ] Display live messages in the GUI text area while initiating the tunnel.
     - [ ] Auto save and auto reload for both (Your IP and Network IP) to improve user experience.
+    - [ ] Other pivoting ways, such as via PSexec or WinRM without reverse shell.
 
 - [ ] Attacks tab:
     - [x] Split the window to two parts.
