@@ -7,7 +7,6 @@ from PyQt5.QtWidgets import QApplication, QVBoxLayout, QWidget, QPushButton, QLa
 
 QApplication.setFont(QFont('Arial', 10))
 
-
 class SessionsTab(QWidget):
     def __init__(self):
         super().__init__()
