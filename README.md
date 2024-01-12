@@ -1,4 +1,4 @@
-# AD Suit
+# ADSuit - Active Directory Penetration Testing Suite
 
 # Overview
 
@@ -6,12 +6,12 @@
 
 # Features
 
-- GUI based tool.
-- Hosts, domain, IPs and credentials management.
-- One click to start a session with WinRM or PSexec.
-- One click to start a spraying usernames and passwords agains a host with two different tools (CrackMapExec and GoMapExec).
-- Pivot easly from network to network with only a reverse shell.
-- Enumerate and attack active directories with one click.
+- User-friendly GUI for effortless navigation.
+- Efficient management of hosts, domains, IPs, and credentials.
+- Instant session initiation with WinRM or PSexec at a single click.
+- Convenient username and password spraying using CrackMapExec and GoMapExec.
+- Seamless network pivoting with just a reverse shell.
+- Automated enumeration and attack on Active Directories.
   
 # Installation
 
@@ -20,6 +20,11 @@
 <b>Download</b> adsuit-1.0.deb and install it with dpkg:
 ```
 sudo dpkg -i adsuit-1.0.deb
+
+```
+Install seclists
+```
+sudo apt install seclists
 
 ```
 To <b>uninstall</b> the tool:
@@ -98,7 +103,7 @@ In this tab, you will need to enter the following information before starting th
 4: Port: The port that you are going to use for listing to the reverse shell.
 5: Upload Wait Time: This time is the time that you think it is enough to upload agent file to the machine that the reverse shell will come from, it depents on how fast is the connection, adjust it depending on that.
 ```
-<b>Windows host example</b>: in this example, we hacked a windows host, then discovered that it's dual interface host, and the other interface might takes as somewhere interesting, so we need to pivot:
+<b>Windows host pivoting example</b>: in this example, we hacked a windows host, then discovered that it's dual interface host, and the other interface might takes as somewhere interesting, so we need to pivot:
 
 screenshot of the windows machine with dual interface
 
@@ -132,7 +137,7 @@ We can now interact with the new network directly from our normal kali terminal,
 ![image](https://github.com/toneemarqus/AD-Suit/assets/85018947/d34a340b-cffb-4eb2-868f-f09896ea3999)
 
 
-<b>Linux host example</b>:
+<b>Linux host pivoting example</b>:
 Here we have another host, but this time the host is with Linux OS, as we can see it's also connected to the external netwok that we have access too "192.168.0.0", and we need to access the "10.0.2.0" network:
 
 ![image](https://github.com/toneemarqus/AD-Suit/assets/85018947/30cb41ee-f00d-47cb-bc3a-601cc08d158f)
@@ -174,18 +179,106 @@ The above command will send the request to the dual host port "1234" that we sen
 
 ## Attacks Tab:
 
+In this tab, we have two types of tools used, enumeration tools and atacking tools. 
+
+![image](https://github.com/toneemarqus/AD-Suit/assets/85018947/31349065-fb8d-4601-b45e-4d43d7fa8112)
+
+when starting interacting with host, it's suggested to start with enumeration, when you put your mouse on the execute button, it will give you some information of the tool:
+
+![image](https://github.com/toneemarqus/AD-Suit/assets/85018947/9eb05823-ad51-48b3-a0d5-583ef95a07e2)
+
+There are two buttons for each one, one for executing and the other one to copy the command.
+
+In addition, there is three dropdown menues at the button, so the user can choose a username, password or hash where needed.
+
+<b>Enumerating example - GetNPUser - Forest Machine HTB </b>
+
+![image](https://github.com/toneemarqus/AD-Suit/assets/85018947/d46a8cdd-b080-4fe2-80a4-0fc84be3eda7)
+
+<b>Enumerating example - Kerbrute UserEnum - Forest Machine HTB </b>
+
+![image](https://github.com/toneemarqus/AD-Suit/assets/85018947/9e9900e0-6561-4476-8c48-6924dcc79c33)
+
+<b>Attacking example - Kerbrute PaswordSpray - Active Machine HTB </b>
+
+Here we need to modify the domain from the hosts tab to "active.htb" and choose only a password to be sprayed with all the usernames:
+
+![image](https://github.com/toneemarqus/AD-Suit/assets/85018947/33346d91-f8bb-48d8-b0d7-8c3cf17f706f)
+
+<b>Attacking example - HashCat</b>
+
+![image](https://github.com/toneemarqus/AD-Suit/assets/85018947/acf12f00-2406-4382-8717-8b0bc44f888b)
+
+# Road Map
+- [ ] General
+    - [ ] Improve Gui design.
+    - [ ] Improve files management for the tool files including text files and tools incuded.
+    - [ ] Add support for normal users not only root users.
+           
+
+- [ ] Hosts Tab:
+    - [x] Support Domain.
+    - [x] Autosave after change detected.
+    - [ ] Improve the design.
+          
+- [ ] UserManagement Tab:
+    - [x] Add hash support
+    - [x] Autosave for all fields.
+    - [ ] Improve the design.
+          
+- [ ] Sessions Tab:
+    - [x] Auto reload while changes is made to IPs or usernames, passwords and hashes.
+    - [x] Kepp the new terminal window open for user to see the command result and close the tab manually.
+    - [ ] Add more session such as SSH, MySQL...etc
+          
+- [ ] Spraying Tab:
+    - [x] Support passwords an hashes.
+    - [x] Add instractions area.
+    - [x] Support more than one tool [CrackMapExec and GoMapExec).
+    - [x] Add dynamic dropdown menus when changing between tools.
+    - [x] Suppurt multiple IP selection.
+    - [ ] Support more protocols for CrackMapExec.
+    
+- [ ] Pivoting tab:
+    - [x] Recieve a reverse shell and deal with it.
+    - [x] Python http server in the backround.
+    - [x] Cancel button to kill all running AD Suit pivoting subprocesses.
+    - [x] Ligolo proxy auto config.
+    - [x] Ligolo Interface auto config.
+    - [x] Add listener to proxy for file uploading to the internal pivoting network.
+    - [x] Keep the tunnel alive while dealing with other tabs using different threads.
+    - [ ] Remove the waiting time for agent and agent.exe and replace it with dynamic method to wait for the uploading to be done.
+    - [ ] Improve python http server start and stop times.
+    - [ ] Display live messages in the GUI text area while initiating the tunnel.
+    - [ ] Auto save and auto reload for both (Your IP and Network IP) to improve user experience.
+
+- [ ] Attacks tab:
+    - [x] Split the window to two parts.
+    - [x] Add copy command buttons.
+    - [x] Add warning messages for all commands when clicking execute.
+    - [x] Add Usernames, password and hashes dropdown menu for more flexibility.
+    - [ ] Add more attacks.
+    - [ ] Give user more space for customizing the commands.
+
+- [ ] Privilege Escalation tab
+  - [ ] Recieve a reverse shell.
+  - [ ] Run enumeration script looking for low hanging fruits.
+  - [ ] Display live messges on the Gui.
+  - [ ] Run tools locally like windows exploit suggester.
+  - [ ] Display a summary at the end of the scan highlighing the cretical and non cretical possible PE vectors.
+     
 
 
-# Contributing to Go Map Exec
+# Contributing to ADSuit
+Contributions to ADSuit are highly encouraged. You can contribute in the following ways:
 
-I welcome contributions from everyone! Here are some ways you can contribute:
+- Reporting Bugs: If you encounter any bugs, please report them using the Issues tab with detailed information.
 
-1. **Reporting Bugs**: If you find a bug, please use the Issues tab to report it, providing as much detail as possible.
+- Feature Suggestions: Share your ideas to enhance ADSuit by submitting them through the Issues tab.
 
-2. **Feature Suggestions**: Have an idea to improve Go Map Exec? We'd love to hear it! Submit your suggestions through the Issues tab.
+- Pull Requests: If you're inclined to contribute directly to the code, please submit a pull request with clear descriptions of your changes and any necessary tests or documentation.
 
-3. **Pull Requests**: Want to directly contribute to the code? Great! Please submit a pull request with a clear description of your changes and any necessary tests or documentation.
-Thank you for your interest in improving Go Map Exec!
+Thank you for considering contributing to ADSuit!
 
 # Disclaimer
-Go Map Exec is intended for legal purposes only. Users are responsible for complying with applicable laws. The developer is not liable for misuse or damage caused by this tool.
+ADSuit is intended solely for educational and legal purposes. Users are responsible for adhering to applicable laws. The developer assumes no liability for misuse or damage caused by this tool.
