@@ -12,7 +12,67 @@
 - Convenient username and password spraying using CrackMapExec and GoMapExec.
 - Seamless network pivoting with just a reverse shell.
 - Automated enumeration and attack on Active Directories.
-  
+
+# Road Map
+- [ ] General
+    - [ ] Improve Gui design.
+    - [ ] Improve files management for the tool files including text files and tools incuded.
+    - [ ] Add support for normal users not only root users.
+           
+
+- [ ] Hosts Tab:
+    - [x] Support Domain.
+    - [x] Autosave after change detected.
+    - [ ] Improve the design.
+          
+- [ ] UserManagement Tab:
+    - [x] Add hash support
+    - [x] Autosave for all fields.
+    - [ ] Improve the design.
+          
+- [ ] Sessions Tab:
+    - [x] Auto reload while changes is made to IPs or usernames, passwords and hashes.
+    - [x] Keep the new terminal window open for user to see the command result and close the tab manually.
+    - [ ] Add more session such as SSH, MySQL...etc
+          
+- [ ] Spraying Tab:
+    - [x] Support passwords an hashes.
+    - [x] Add instractions area.
+    - [x] Support more than one tool [CrackMapExec and GoMapExec).
+    - [x] Add dynamic dropdown menus when changing between tools.
+    - [x] Suppurt multiple IP selection.
+    - [ ] Support more protocols for CrackMapExec.
+    
+- [ ] Pivoting tab:
+    - [x] Recieve a reverse shell and deal with it.
+    - [x] Python http server in the backround.
+    - [x] Cancel button to kill all running AD Suit pivoting subprocesses.
+    - [x] Ligolo proxy auto config.
+    - [x] Ligolo Interface auto config.
+    - [x] Add listener to proxy for file uploading to the internal pivoting network.
+    - [x] Keep the tunnel alive while dealing with other tabs using different threads.
+    - [ ] Remove the waiting time for agent and agent.exe and replace it with dynamic method to wait for the uploading to be done.
+    - [ ] Improve python http server start and stop times.
+    - [ ] Display live messages in the GUI text area while initiating the tunnel.
+    - [ ] Auto save and auto reload for both (Your IP and Network IP) to improve user experience.
+    - [ ] Other pivoting ways, such as via PSexec or WinRM without reverse shell.
+
+- [ ] Attacks tab:
+    - [x] Split the window to two parts.
+    - [x] Add copy command buttons.
+    - [x] Add warning messages for all commands when clicking execute.
+    - [x] Add Usernames, password and hashes dropdown menu for more flexibility.
+    - [ ] Add more attacks.
+    - [ ] Give user more space for customizing the commands.
+
+- [ ] Privilege Escalation tab
+  - [ ] Recieve a reverse shell.
+  - [ ] Run enumeration script looking for low hanging fruits.
+  - [ ] Display live messges on the Gui.
+  - [ ] Run tools locally like windows exploit suggester.
+  - [ ] Display a summary at the end of the scan highlighing the cretical and non cretical possible PE vectors.
+     
+
 # Installation
 
 <b>The Tool only supports the latest version of kali at the mean time.</b>
@@ -209,65 +269,6 @@ Here we need to modify the domain from the hosts tab to "active.htb" and choose 
 
 ![image](https://github.com/toneemarqus/AD-Suit/assets/85018947/acf12f00-2406-4382-8717-8b0bc44f888b)
 
-# Road Map
-- [ ] General
-    - [ ] Improve Gui design.
-    - [ ] Improve files management for the tool files including text files and tools incuded.
-    - [ ] Add support for normal users not only root users.
-           
-
-- [ ] Hosts Tab:
-    - [x] Support Domain.
-    - [x] Autosave after change detected.
-    - [ ] Improve the design.
-          
-- [ ] UserManagement Tab:
-    - [x] Add hash support
-    - [x] Autosave for all fields.
-    - [ ] Improve the design.
-          
-- [ ] Sessions Tab:
-    - [x] Auto reload while changes is made to IPs or usernames, passwords and hashes.
-    - [x] Keep the new terminal window open for user to see the command result and close the tab manually.
-    - [ ] Add more session such as SSH, MySQL...etc
-          
-- [ ] Spraying Tab:
-    - [x] Support passwords an hashes.
-    - [x] Add instractions area.
-    - [x] Support more than one tool [CrackMapExec and GoMapExec).
-    - [x] Add dynamic dropdown menus when changing between tools.
-    - [x] Suppurt multiple IP selection.
-    - [ ] Support more protocols for CrackMapExec.
-    
-- [ ] Pivoting tab:
-    - [x] Recieve a reverse shell and deal with it.
-    - [x] Python http server in the backround.
-    - [x] Cancel button to kill all running AD Suit pivoting subprocesses.
-    - [x] Ligolo proxy auto config.
-    - [x] Ligolo Interface auto config.
-    - [x] Add listener to proxy for file uploading to the internal pivoting network.
-    - [x] Keep the tunnel alive while dealing with other tabs using different threads.
-    - [ ] Remove the waiting time for agent and agent.exe and replace it with dynamic method to wait for the uploading to be done.
-    - [ ] Improve python http server start and stop times.
-    - [ ] Display live messages in the GUI text area while initiating the tunnel.
-    - [ ] Auto save and auto reload for both (Your IP and Network IP) to improve user experience.
-    - [ ] Other pivoting ways, such as via PSexec or WinRM without reverse shell.
-
-- [ ] Attacks tab:
-    - [x] Split the window to two parts.
-    - [x] Add copy command buttons.
-    - [x] Add warning messages for all commands when clicking execute.
-    - [x] Add Usernames, password and hashes dropdown menu for more flexibility.
-    - [ ] Add more attacks.
-    - [ ] Give user more space for customizing the commands.
-
-- [ ] Privilege Escalation tab
-  - [ ] Recieve a reverse shell.
-  - [ ] Run enumeration script looking for low hanging fruits.
-  - [ ] Display live messges on the Gui.
-  - [ ] Run tools locally like windows exploit suggester.
-  - [ ] Display a summary at the end of the scan highlighing the cretical and non cretical possible PE vectors.
-     
 
 
 # Contributing to ADSuit
