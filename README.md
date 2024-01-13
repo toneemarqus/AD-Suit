@@ -228,7 +228,7 @@ Here we need to modify the domain from the hosts tab to "active.htb" and choose 
           
 - [ ] Sessions Tab:
     - [x] Auto reload while changes is made to IPs or usernames, passwords and hashes.
-    - [x] Kepp the new terminal window open for user to see the command result and close the tab manually.
+    - [x] Keep the new terminal window open for user to see the command result and close the tab manually.
     - [ ] Add more session such as SSH, MySQL...etc
           
 - [ ] Spraying Tab:
