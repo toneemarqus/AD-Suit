@@ -284,3 +284,6 @@ Thank you for considering contributing to ADSuit!
 
 # Disclaimer
 ADSuit is intended solely for educational and legal purposes. Users are responsible for adhering to applicable laws. The developer assumes no liability for misuse or damage caused by this tool.
+
+
+<iframe style="width:100%;height:auto;min-width:600px;min-height:400px;" src="https://star-history.com/embed?secret=#toneemarqus/AD-Suit&Date" frameBorder="0"></iframe>
