@@ -18,6 +18,7 @@
     - [ ] Improve Gui design.
     - [ ] Improve files management for the tool files including text files and tools incuded.
     - [ ] Add support for normal users not only root users.
+    - [ ] Create a docker to contains the tool for fast install and run.
            
 
 - [ ] Hosts Tab:
@@ -63,7 +64,9 @@
     - [x] Add warning messages for all commands when clicking execute.
     - [x] Add Usernames, password and hashes dropdown menu for more flexibility.
     - [ ] Add more attacks.
-    - [ ] Give user more space for customizing the commands.
+    - [ ] Give users more space for customizing the commands.
+    - [ ] Create a file that contain templates for the attacks, users should be able to share templates.
+    
 
 - [ ] Privilege Escalation tab
   - [ ] Recieve a reverse shell.
