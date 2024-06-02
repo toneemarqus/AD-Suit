@@ -43,6 +43,7 @@
     - [x] Add dynamic dropdown menus when changing between tools.
     - [x] Suppurt multiple IP selection.
     - [ ] Support more protocols for CrackMapExec.
+    - [ ] Add NXE support.
     
 - [ ] Pivoting tab:
     - [x] Recieve a reverse shell and deal with it.
@@ -63,6 +64,7 @@
     - [x] Add copy command buttons.
     - [x] Add warning messages for all commands when clicking execute.
     - [x] Add Usernames, password and hashes dropdown menu for more flexibility.
+    - [ ] Add NXE attacks especially enumeration techniques.
     - [ ] Add more attacks.
     - [ ] Give users more space for customizing the commands.
     - [ ] Create a file that contain templates for the attacks, users should be able to share templates.
